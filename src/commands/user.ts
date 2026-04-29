@@ -5,6 +5,6 @@ export const user : Command = {
     async execute(message) {
         const member = message.member;
 
-        await message.reply(`Nick: ${member?.displayName}\n UID: ${message.author.id}`);
+        await message.reply(`*Nick*: ${member?.displayName}\n*UID*: ${message.author.id}`);
     }
 }

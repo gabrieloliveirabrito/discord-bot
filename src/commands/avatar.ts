@@ -11,6 +11,6 @@ export const avatar : Command = {
             extension: "png"
         });
 
-        await message.reply(`UID: ${user.id}\n Name: ${user.username}\n Avatar: ${avatarURL}`);
+        await message.reply(`*UID*: ${user.id}\n*Name*: ${user.username}\n*Avatar*: ${avatarURL}`);
     }
 }
