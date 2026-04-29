@@ -12,7 +12,7 @@ registerCommand(user);
 
 initHandler(prefix);
 
-client.once("ready", () => {
+client.once("clientReady", () => {
     console.log(`Bot online has ${client.user?.tag}`);
 });
 

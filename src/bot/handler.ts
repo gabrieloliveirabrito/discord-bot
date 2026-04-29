@@ -12,7 +12,7 @@ export function initHandler(prefix: string) : void {
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
 
-        const args = message.content.slice(prefix.length).trim().split(/ */);
+        const args = message.content.slice(prefix.length).trim().split(/ +/);
         const name = args.shift()?.toLowerCase();
 
         if (!name) return;
